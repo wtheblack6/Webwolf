@@ -16,3 +16,22 @@ No fake "AI" scanners. No malware. Just pure, working, destructive (authorized) 
 ### One Command
 ```bash
 python3 webwolf.py https://target.com --aggressive
+
+### How to Install & Run (Takes 30 seconds on Kali)
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/wtheblack6/WebWolf.git
+cd WebWolf
+
+# 2. Install dependencies (one command)
+pip3 install -r requirements.txt
+
+# 3. Make it executable (optional but clean)
+chmod +x webwolf.py
+
+# 4. Run it
+python3 webwolf.py https://target.com --aggressive
+
+# Or with all options
+python3 webwolf.py http://example.com -t 50 --aggressive -o my_scan
